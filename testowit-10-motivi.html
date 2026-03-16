@@ -14,6 +14,18 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
+    /* ── SHOPIFY FULL-WIDTH BREAKOUT ──
+       Shopify wraps page content in a narrow container.
+       This breaks out of it to use 100% of the viewport. */
+    #lp-root {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      max-width: 100vw;
+      overflow-x: hidden;
+      position: relative;
+    }
+
     /* ── TOKENS ── */
     :root {
       --red:        #DC2626;
@@ -39,6 +51,7 @@
       color: var(--navy);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
@@ -715,6 +728,8 @@
 </head>
 <body>
 
+  <div id="lp-root">
+
   <!-- ══ ANNOUNCEMENT BAR ══ -->
   <div class="ann-bar">
     🔥 OFFERTA SPECIALE: -50% su TESTOWIT — Solo Per Oggi
@@ -1155,6 +1170,8 @@
       APPROFITTA ORA →
     </a>
   </div>
+
+  </div><!-- /#lp-root -->
 
   <!-- ══ CAROUSEL JS ══ -->
   <script>
