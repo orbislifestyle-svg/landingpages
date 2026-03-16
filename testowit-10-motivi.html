@@ -3,1109 +3,1018 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>10 Motivi Per Cui TESTOWIT È il Segreto dei Uomini Che Non Vogliono Arrendersi all'Età</title>
-  <meta name="description" content="Scopri i 10 motivi per cui TESTOWIT è l'integratore naturale più completo per supportare il testosterone, l'energia e la vitalità maschile." />
-
-  <!-- Google Fonts -->
+  <title>10 Motivi Per Cui TESTOWIT È Diverso Da Qualsiasi Altra Cosa Tu Abbia Mai Provato</title>
+  <meta name="description" content="Scopri i 10 motivi per cui TESTOWIT è l'integratore testosterone naturale #1 in Italia. Formula svizzera con ingredienti brevettati." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <style>
-    /* ===== RESET & BASE ===== */
+    /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --gold: #C9A84C;
-      --gold-light: #F0C75A;
-      --gold-dark: #9E7B2F;
-      --black: #0A0A0A;
-      --dark: #111111;
-      --dark2: #181818;
-      --dark3: #222222;
-      --border: #2a2a2a;
-      --text: #E8E8E8;
-      --text-muted: #999999;
-      --white: #FFFFFF;
-      --red: #E03030;
-      --green: #2ECC71;
-    }
-
     html { scroll-behavior: smooth; }
 
+    /* ── TOKENS ── */
+    :root {
+      --red:        #DC2626;
+      --red-dark:   #B91C1C;
+      --red-bg:     #FEF2F2;
+      --navy:       #111827;
+      --gray-dark:  #374151;
+      --gray:       #6B7280;
+      --gray-light: #9CA3AF;
+      --bg:         #F9FAFB;
+      --bg-card:    #F3F4F6;
+      --border:     #E5E7EB;
+      --blue-light: #DBEAFE;
+      --blue-mid:   #BFDBFE;
+      --white:      #FFFFFF;
+      --green:      #16A34A;
+    }
+
+    /* ── BASE ── */
     body {
-      background-color: var(--black);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: var(--navy);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
-    img { max-width: 100%; height: auto; display: block; }
+    /* ── HELPERS ── */
+    .container       { max-width: 900px;  margin: 0 auto; padding: 0 20px; }
+    .container--wide { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .red  { color: var(--red); }
+    .bold { font-weight: 800; }
 
-    a { color: var(--gold); text-decoration: none; }
-
-    /* ===== UTILITY ===== */
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .container--wide {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .text-gold { color: var(--gold); }
-    .text-gold-light { color: var(--gold-light); }
-    .text-white { color: var(--white); }
-    .text-center { text-align: center; }
-    .uppercase { text-transform: uppercase; }
-
-    /* ===== STICKY CTA BAR ===== */
-    .sticky-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(135deg, #1a1400 0%, #2a1f00 100%);
-      border-top: 2px solid var(--gold);
-      padding: 12px 20px;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .sticky-bar p {
-      font-size: 14px;
+    /* ══════════════════════════════════
+       ANNOUNCEMENT BAR
+    ══════════════════════════════════ */
+    .ann-bar {
+      background: var(--red);
+      color: #fff;
+      text-align: center;
+      padding: 11px 16px;
+      font-size: 13px;
       font-weight: 700;
-      color: var(--text);
-      letter-spacing: 0.3px;
+      letter-spacing: .3px;
+    }
+    .ann-bar a {
+      color: #fff;
+      text-decoration: underline;
+      margin-left: 6px;
+      font-weight: 800;
     }
 
-    .sticky-bar p span { color: var(--gold-light); }
-
-    /* ===== BUTTONS ===== */
+    /* ══════════════════════════════════
+       BUTTONS
+    ══════════════════════════════════ */
     .btn {
       display: inline-block;
-      padding: 16px 36px;
-      border-radius: 4px;
-      font-family: 'Inter', sans-serif;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
       font-weight: 800;
       font-size: 15px;
-      letter-spacing: 1px;
+      letter-spacing: .5px;
       text-transform: uppercase;
-      cursor: pointer;
+      padding: 15px 36px;
+      border-radius: 8px;
       border: none;
-      transition: all 0.25s ease;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
       text-align: center;
       text-decoration: none;
     }
+    .btn:hover   { background: var(--red-dark); transform: translateY(-1px); }
+    .btn:active  { transform: translateY(0); }
+    .btn--lg     { padding: 18px 48px; font-size: 17px; }
+    .btn--block  { display: block; width: 100%; }
 
-    .btn--gold {
-      background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 50%, var(--gold-light) 100%);
-      color: var(--black);
-      box-shadow: 0 4px 20px rgba(201, 168, 76, 0.35);
-    }
-
-    .btn--gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(201, 168, 76, 0.55);
-      filter: brightness(1.08);
-    }
-
-    .btn--gold:active { transform: translateY(0); }
-
-    .btn--lg {
-      padding: 20px 52px;
-      font-size: 17px;
-      border-radius: 6px;
-    }
-
-    .btn--full { width: 100%; display: block; }
-
-    /* ===== ANNOUNCEMENT BAR ===== */
-    .announcement {
-      background: var(--gold);
-      color: var(--black);
-      text-align: center;
-      padding: 10px 20px;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    /* ===== HERO ===== */
+    /* ══════════════════════════════════
+       HERO
+    ══════════════════════════════════ */
     .hero {
-      background: linear-gradient(180deg, #0d0d0d 0%, #111111 100%);
-      padding: 70px 20px 80px;
+      background: var(--bg);
+      padding: 60px 20px 64px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
     }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero__eyebrow {
+    .hero__pill {
       display: inline-block;
-      background: rgba(201,168,76,0.12);
-      border: 1px solid rgba(201,168,76,0.4);
-      color: var(--gold);
+      background: var(--blue-light);
+      color: #1D4ED8;
       font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      padding: 7px 18px;
-      border-radius: 2px;
-      margin-bottom: 24px;
+      padding: 6px 18px;
+      border-radius: 40px;
+      margin-bottom: 22px;
     }
-
-    .hero__headline {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(40px, 7vw, 78px);
-      line-height: 1.0;
-      color: var(--white);
-      letter-spacing: 1px;
-      margin-bottom: 16px;
+    .hero h1 {
+      font-size: clamp(26px, 5.5vw, 54px);
+      font-weight: 900;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 18px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    .hero__headline em {
-      font-style: normal;
-      color: var(--gold);
-    }
-
     .hero__sub {
-      font-size: clamp(17px, 2.5vw, 22px);
-      color: var(--text-muted);
-      max-width: 680px;
-      margin: 0 auto 40px;
-      line-height: 1.5;
-    }
-
-    .hero__sub strong { color: var(--text); }
-
-    .hero__badges {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-      margin: 36px auto 0;
-      max-width: 640px;
-    }
-
-    .badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 8px 14px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-    }
-
-    .badge__icon { font-size: 16px; }
-
-    /* ===== INTRO SECTION ===== */
-    .intro {
-      padding: 72px 20px;
-      background: var(--dark2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .intro__inner {
-      max-width: 720px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .intro__label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    .intro__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(32px, 5vw, 52px);
-      color: var(--white);
-      line-height: 1.1;
-      margin-bottom: 24px;
-    }
-
-    .intro__body {
-      font-size: 17px;
-      color: var(--text-muted);
-      line-height: 1.75;
-    }
-
-    .intro__body strong { color: var(--text); }
-
-    /* ===== DIVIDER ===== */
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin: 48px 0;
-    }
-
-    .divider__line {
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    .divider__text {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    /* ===== REASONS SECTION ===== */
-    .reasons {
-      padding: 80px 20px 60px;
-      background: var(--black);
-    }
-
-    .reasons__header {
-      text-align: center;
-      margin-bottom: 72px;
-    }
-
-    .reasons__label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .reasons__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(36px, 6vw, 64px);
-      color: var(--white);
-      line-height: 1.05;
-    }
-
-    /* ===== REASON CARD ===== */
-    .reason {
-      display: grid;
-      grid-template-columns: 80px 1fr;
-      gap: 28px;
-      align-items: start;
-      padding: 40px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .reason:last-child { border-bottom: none; }
-
-    .reason__number {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 88px;
-      line-height: 0.85;
-      color: rgba(201,168,76,0.15);
-      user-select: none;
-      padding-top: 4px;
-    }
-
-    .reason__content {}
-
-    .reason__tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
-
-    .reason__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(26px, 4vw, 38px);
-      color: var(--white);
-      line-height: 1.1;
-      margin-bottom: 14px;
-    }
-
-    .reason__body {
-      font-size: 16px;
-      color: var(--text-muted);
-      line-height: 1.75;
-    }
-
-    .reason__body strong { color: var(--text); }
-
-    .reason__highlight {
-      margin-top: 16px;
-      padding: 14px 18px;
-      background: rgba(201,168,76,0.07);
-      border-left: 3px solid var(--gold);
-      border-radius: 0 4px 4px 0;
-      font-size: 14px;
-      color: var(--text-muted);
-      font-style: italic;
-    }
-
-    .reason__highlight strong { color: var(--gold-light); font-style: normal; }
-
-    /* ===== INGREDIENT SPOTLIGHT ===== */
-    .ingredients {
-      padding: 80px 20px;
-      background: var(--dark2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .ingredients__header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .ingredients__label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .ingredients__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(32px, 5vw, 54px);
-      color: var(--white);
-      line-height: 1.1;
-    }
-
-    .ingredients__grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .ing-card {
-      background: var(--dark3);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 24px 22px;
-      transition: border-color 0.2s ease;
-    }
-
-    .ing-card:hover { border-color: rgba(201,168,76,0.4); }
-
-    .ing-card__icon {
-      font-size: 28px;
-      margin-bottom: 12px;
-    }
-
-    .ing-card__name {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 20px;
-      color: var(--gold);
-      margin-bottom: 6px;
-      letter-spacing: 0.5px;
-    }
-
-    .ing-card__badge {
-      display: inline-block;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.3);
-      font-size: 9px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      padding: 3px 8px;
-      border-radius: 2px;
-      margin-bottom: 10px;
-    }
-
-    .ing-card__text {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    /* ===== TESTIMONIALS ===== */
-    .testimonials {
-      padding: 80px 20px;
-      background: var(--black);
-    }
-
-    .testimonials__header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .testimonials__label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .testimonials__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(32px, 5vw, 54px);
-      color: var(--white);
-      line-height: 1.1;
-    }
-
-    .testimonials__grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 24px;
-    }
-
-    .testi-card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 28px 24px;
-    }
-
-    .testi-card__stars {
-      color: var(--gold);
-      font-size: 18px;
-      margin-bottom: 14px;
-      letter-spacing: 2px;
-    }
-
-    .testi-card__quote {
-      font-size: 15px;
-      color: var(--text);
+      font-size: clamp(15px, 2.2vw, 18px);
+      color: var(--gray);
+      max-width: 620px;
+      margin: 0 auto 36px;
       line-height: 1.7;
-      margin-bottom: 20px;
-      font-style: italic;
     }
-
-    .testi-card__author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .testi-card__avatar {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 18px;
-      color: var(--black);
-      flex-shrink: 0;
-    }
-
-    .testi-card__name {
-      font-weight: 700;
-      font-size: 14px;
-      color: var(--white);
-    }
-
-    .testi-card__meta {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .testi-card__verified {
-      font-size: 11px;
-      color: var(--green);
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      margin-top: 4px;
-    }
-
-    /* ===== COMPARISON TABLE ===== */
-    .comparison {
-      padding: 80px 20px;
-      background: var(--dark2);
-      border-top: 1px solid var(--border);
-    }
-
-    .comparison__header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .comparison__label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .comparison__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(32px, 5vw, 54px);
-      color: var(--white);
-      line-height: 1.1;
-    }
-
-    .comp-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 15px;
-    }
-
-    .comp-table thead th {
-      padding: 16px 20px;
-      text-align: center;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 20px;
-      letter-spacing: 1px;
-      border-bottom: 2px solid var(--border);
-    }
-
-    .comp-table thead th:first-child { text-align: left; color: var(--text-muted); }
-    .comp-table thead th:nth-child(2) { color: var(--text-muted); }
-    .comp-table thead th:nth-child(3) { color: var(--gold); }
-
-    .comp-table tbody tr {
-      border-bottom: 1px solid var(--border);
-      transition: background 0.15s;
-    }
-
-    .comp-table tbody tr:hover { background: rgba(255,255,255,0.02); }
-
-    .comp-table tbody td {
-      padding: 14px 20px;
-      text-align: center;
-      color: var(--text-muted);
-    }
-
-    .comp-table tbody td:first-child { text-align: left; color: var(--text); font-weight: 600; }
-
-    .icon-yes { color: var(--green); font-size: 18px; }
-    .icon-no { color: var(--red); font-size: 18px; }
-
-    /* ===== GUARANTEE ===== */
-    .guarantee {
-      padding: 72px 20px;
-      background: var(--black);
-      border-top: 1px solid var(--border);
-    }
-
-    .guarantee__inner {
-      max-width: 680px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .guarantee__icon {
-      font-size: 64px;
-      margin-bottom: 20px;
-    }
-
-    .guarantee__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(30px, 5vw, 48px);
-      color: var(--white);
-      margin-bottom: 16px;
-    }
-
-    .guarantee__body {
-      font-size: 17px;
-      color: var(--text-muted);
-      line-height: 1.75;
-    }
-
-    .guarantee__body strong { color: var(--text); }
-
-    /* ===== FINAL CTA ===== */
-    .final-cta {
-      padding: 100px 20px 140px;
-      background: linear-gradient(180deg, #111111 0%, #0d0e00 50%, #0d0d0d 100%);
-      text-align: center;
-      border-top: 1px solid var(--border);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .final-cta::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.1) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .final-cta__label {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    .final-cta__title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(40px, 7vw, 80px);
-      color: var(--white);
-      line-height: 1.0;
-      margin-bottom: 20px;
-    }
-
-    .final-cta__title em {
-      font-style: normal;
-      color: var(--gold);
-    }
-
-    .final-cta__sub {
-      font-size: 18px;
-      color: var(--text-muted);
-      max-width: 560px;
-      margin: 0 auto 48px;
-      line-height: 1.6;
-    }
-
-    .final-cta__sub strong { color: var(--text); }
-
-    .final-cta__promo {
-      display: inline-block;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.4);
-      color: var(--gold-light);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 8px 20px;
-      border-radius: 3px;
-      margin-bottom: 28px;
-    }
-
-    .final-cta__perks {
+    .hero__sub strong { color: var(--navy); }
+    .hero__trust {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
+      gap: 16px;
       margin-top: 28px;
     }
-
-    .perk {
+    .trust-chip {
       display: flex;
       align-items: center;
       gap: 7px;
       font-size: 13px;
-      color: var(--text-muted);
-      font-weight: 600;
+      font-weight: 700;
+      color: var(--gray-dark);
     }
+    .trust-chip span { font-size: 17px; }
 
-    .perk__icon { color: var(--green); font-size: 15px; }
-
-    /* ===== FOOTER ===== */
-    .footer {
-      background: var(--dark2);
-      border-top: 1px solid var(--border);
-      padding: 28px 20px;
+    /* ══════════════════════════════════
+       SECTION HEADINGS
+    ══════════════════════════════════ */
+    .s-head {
       text-align: center;
+      margin-bottom: 48px;
+    }
+    .s-head h2 {
+      font-size: clamp(22px, 4vw, 40px);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.15;
+      color: var(--navy);
+    }
+    .s-head p {
+      font-size: 16px;
+      color: var(--gray);
+      max-width: 580px;
+      margin: 14px auto 0;
+      line-height: 1.65;
     }
 
-    .footer__logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 28px;
-      letter-spacing: 4px;
-      color: var(--gold);
+    /* ══════════════════════════════════
+       10 REASONS
+    ══════════════════════════════════ */
+    .reasons { padding: 72px 20px 56px; background: var(--white); }
+
+    .reason {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 24px;
+      align-items: start;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .reason:last-of-type { border-bottom: none; }
+
+    .reason__num {
+      width: 56px;
+      height: 56px;
+      background: var(--red);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .reason__body h3 {
+      font-size: clamp(16px, 2.5vw, 22px);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .reason__body p {
+      font-size: 15px;
+      color: var(--gray);
+      line-height: 1.75;
+    }
+    .reason__body p strong { color: var(--navy); }
+    .reason__callout {
+      margin-top: 14px;
+      padding: 12px 16px;
+      background: var(--blue-light);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #1D4ED8;
+      line-height: 1.5;
+    }
+
+    .reasons__cta { text-align: center; padding-top: 48px; }
+
+    /* ══════════════════════════════════
+       STATS
+    ══════════════════════════════════ */
+    .stats { padding: 72px 20px; background: var(--bg); }
+    .stats__inner { max-width: 480px; margin: 0 auto; }
+    .stats__title {
+      font-size: clamp(24px, 4vw, 34px);
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 44px;
+      color: var(--navy);
+    }
+    .stat-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    .stat-ring {
+      width: 88px;
+      height: 88px;
+      border: 4px solid var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--red);
+      flex-shrink: 0;
+      text-align: center;
+      line-height: 1.1;
+    }
+    .stat-text { font-size: 16px; color: var(--navy); line-height: 1.55; }
+    .stat-text strong { font-weight: 800; }
+    .stats__note {
+      font-size: 11px;
+      color: var(--gray-light);
+      font-style: italic;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    /* ══════════════════════════════════
+       INGREDIENT CAROUSEL
+    ══════════════════════════════════ */
+    .ingredients { padding: 72px 20px; background: var(--white); }
+    .carousel-outer { overflow: hidden; }
+    .carousel-track {
+      display: flex;
+      gap: 20px;
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+    }
+    .c-slide {
+      flex: 0 0 calc(33.333% - 14px);
+      min-width: calc(33.333% - 14px);
+    }
+    .c-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 32px 20px 28px;
+      text-align: center;
+      height: 100%;
+    }
+    .c-card__img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      background: var(--white);
+    }
+    .c-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .c-card p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+    .carousel-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 32px;
+    }
+    .c-btn {
+      width: 44px;
+      height: 44px;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .2s;
+      flex-shrink: 0;
+    }
+    .c-btn:hover { background: var(--red); }
+    .c-dots { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+    .c-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background .2s;
+    }
+    .c-dot.on { background: var(--navy); }
+
+    /* ══════════════════════════════════
+       COMPARISON TABLE
+    ══════════════════════════════════ */
+    .comparison { padding: 72px 20px; background: var(--bg); }
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .comp {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+      min-width: 560px;
+    }
+    .comp thead th {
+      padding: 18px 14px 14px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--gray-dark);
+      border-bottom: 2px solid var(--border);
+      line-height: 1.3;
+    }
+    .comp thead th:first-child { text-align: left; width: 38%; }
+    .comp thead th.col-orbis {
+      background: var(--blue-light);
+      border-radius: 14px 14px 0 0;
+      color: var(--navy);
+    }
+    .orbis-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--red);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 5px 14px;
+      border-radius: 40px;
+    }
+    .orbis-badge span { font-size: 16px; }
+
+    .comp tbody td {
+      padding: 13px 14px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+      color: var(--gray);
+    }
+    .comp tbody td:first-child {
+      text-align: left;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .comp tbody td.col-orbis { background: var(--blue-light); }
+    .comp tbody tr:last-child td.col-orbis:last-child { border-radius: 0 0 14px 14px; }
+
+    .ico-y {
+      display: inline-flex;
+      width: 26px; height: 26px;
+      background: var(--red);
+      color: #fff;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .ico-n {
+      display: inline-flex;
+      width: 26px; height: 26px;
+      border: 2px solid #D1D5DB;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: #D1D5DB;
+    }
+    .ico-p {
+      font-size: 18px;
+      color: var(--gray-light);
+    }
+
+    /* ══════════════════════════════════
+       SWISS QUALITY
+    ══════════════════════════════════ */
+    .swiss { padding: 72px 20px; background: var(--white); }
+    .swiss__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .swiss__img-box {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 90px;
+    }
+    .swiss__copy h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+    .swiss__copy p {
+      font-size: 15px;
+      color: var(--gray-dark);
+      line-height: 1.75;
+      margin-bottom: 18px;
+    }
+    .swiss__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .swiss__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+    .li-x   { color: var(--red);   font-size: 16px; line-height: 1.4; font-weight: 900; }
+    .li-chk { color: var(--green); font-size: 16px; line-height: 1.4; }
+
+    /* ══════════════════════════════════
+       SOCIAL PROOF
+    ══════════════════════════════════ */
+    .social { padding: 72px 20px; background: var(--bg); }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .v-card__meta {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
       margin-bottom: 12px;
     }
+    .v-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .v-name {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+    .v-quote {
+      font-size: 12px;
+      color: var(--gray);
+      font-style: italic;
+      margin-top: 3px;
+      line-height: 1.45;
+    }
+    .v-thumb {
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 9/16;
+      background: #1a1a2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
+    }
+    .v-thumb__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg,#0f172a,#1e3a5f);
+      opacity: .85;
+    }
+    .v-thumb__play {
+      position: relative;
+      z-index: 2;
+      width: 56px; height: 56px;
+      background: rgba(255,255,255,.92);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--navy);
+      transition: transform .2s;
+    }
+    .v-thumb:hover .v-thumb__play { transform: scale(1.1); }
 
-    .footer__disclaimer {
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .badge-pill {
+      background: var(--blue-light);
+      color: #1D4ED8;
+      font-size: 13px;
+      font-weight: 700;
+      font-style: italic;
+      padding: 10px 22px;
+      border-radius: 40px;
+    }
+
+    /* ══════════════════════════════════
+       GUARANTEE
+    ══════════════════════════════════ */
+    .guarantee {
+      padding: 72px 20px;
+      background: var(--white);
+      text-align: center;
+    }
+    .guarantee__inner { max-width: 560px; margin: 0 auto; }
+    .guarantee__icon { font-size: 72px; margin-bottom: 18px; }
+    .guarantee h2 {
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .guarantee p {
+      font-size: 16px;
+      color: var(--gray);
+      line-height: 1.75;
+    }
+    .guarantee p strong { color: var(--navy); }
+
+    /* ══════════════════════════════════
+       FINAL CTA
+    ══════════════════════════════════ */
+    .final-cta {
+      padding: 80px 20px 130px;
+      background: var(--bg);
+      text-align: center;
+    }
+    .final-cta__pill {
+      display: inline-block;
+      background: var(--blue-light);
+      color: #1D4ED8;
       font-size: 11px;
-      color: #555;
-      line-height: 1.6;
-      max-width: 700px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 40px;
+      margin-bottom: 20px;
+    }
+    .final-cta h2 {
+      font-size: clamp(30px, 6vw, 60px);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .final-cta p {
+      font-size: 17px;
+      color: var(--gray);
+      max-width: 480px;
+      margin: 0 auto 36px;
+      line-height: 1.65;
+    }
+    .final-cta p strong { color: var(--navy); }
+    .cta-perks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .cta-perk {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gray-dark);
+    }
+    .cta-perk .chk { color: var(--green); font-size: 15px; }
+
+    /* ══════════════════════════════════
+       FOOTER
+    ══════════════════════════════════ */
+    .footer {
+      background: var(--navy);
+      padding: 32px 20px;
+      text-align: center;
+    }
+    .footer__logo {
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: 3px;
+      margin-bottom: 14px;
+    }
+    .footer__disc {
+      font-size: 11px;
+      color: #6B7280;
+      line-height: 1.7;
+      max-width: 680px;
       margin: 0 auto;
     }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 640px) {
-      .reason {
-        grid-template-columns: 60px 1fr;
-        gap: 18px;
-      }
+    /* ══════════════════════════════════
+       STICKY BAR
+    ══════════════════════════════════ */
+    .sticky {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #fff;
+      border-top: 2px solid var(--border);
+      padding: 11px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      z-index: 9999;
+      flex-wrap: wrap;
+      box-shadow: 0 -4px 24px rgba(0,0,0,.08);
+    }
+    .sticky p { font-size: 14px; font-weight: 700; color: var(--navy); }
+    .sticky p span { color: var(--red); }
+    .sticky .btn { padding: 10px 24px; font-size: 13px; }
 
-      .reason__number { font-size: 64px; }
-
-      .sticky-bar { flex-direction: column; gap: 10px; padding: 14px 16px; }
-
-      .comp-table { font-size: 13px; }
-      .comp-table thead th, .comp-table tbody td { padding: 10px 12px; }
+    /* ══════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════ */
+    @media (max-width: 760px) {
+      .c-slide { flex: 0 0 calc(100% - 32px); min-width: calc(100% - 32px); }
+      .swiss__grid { grid-template-columns: 1fr; gap: 28px; }
+      .video-grid { grid-template-columns: 1fr; gap: 32px; }
+      .comp { min-width: 480px; font-size: 13px; }
+      .comp thead th, .comp tbody td { padding: 10px 10px; }
+    }
+    @media (max-width: 560px) {
+      .reason { grid-template-columns: 52px 1fr; gap: 14px; }
+      .reason__num { width: 46px; height: 46px; font-size: 17px; }
+      .sticky { flex-direction: column; gap: 8px; padding: 12px 16px; }
+      .hero h1 { font-size: 26px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="announcement">
-    🔥 OFFERTA 2×1 — Prendi 2 Confezioni, Paghi Solo 1 &nbsp;|&nbsp; Scorte Limitate
+  <!-- ══ ANNOUNCEMENT BAR ══ -->
+  <div class="ann-bar">
+    🔥 OFFERTA SPECIALE: -50% su TESTOWIT — Solo Per Oggi
+    <a href="https://orbislifestyle.com/pages/testowit-promo-2x1">Ordina Ora →</a>
   </div>
 
-  <!-- HERO -->
+  <!-- ══ HERO ══ -->
   <section class="hero">
     <div class="container">
-      <div class="hero__eyebrow">ORBIS Lifestyle · Qualità Svizzera</div>
-      <h1 class="hero__headline">
+      <div class="hero__pill">L'Integratore Testosterone #1 In Italia</div>
+      <h1>
         10 Motivi Per Cui<br>
-        <em>TESTOWIT</em><br>
-        Cambierà la Tua Vita
+        <span class="red">TESTOWIT</span> È Diverso<br>
+        Da Qualsiasi Altra Cosa<br>
+        Tu Abbia Mai Provato
       </h1>
       <p class="hero__sub">
-        L'integratore naturale che stanno scoprendo migliaia di uomini italiani per
-        <strong>recuperare energia, testosterone e vitalità</strong> — senza farmaci e senza effetti collaterali.
+        Migliaia di uomini italiani hanno già scoperto come TESTOWIT
+        supporta naturalmente il testosterone, l'energia e la vitalità
+        — <strong>senza farmaci, senza effetti collaterali.</strong>
       </p>
-      <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--gold btn--lg">
-        Scopri l'Offerta 2×1 →
+      <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--lg">
+        SCOPRI L'OFFERTA -50% →
       </a>
-      <div class="hero__badges">
-        <div class="badge"><span class="badge__icon">🇨🇭</span> Qualità Svizzera</div>
-        <div class="badge"><span class="badge__icon">🌿</span> Formula Naturale</div>
-        <div class="badge"><span class="badge__icon">🔬</span> Ingredienti Brevettati</div>
-        <div class="badge"><span class="badge__icon">✅</span> Garanzia 30 Giorni</div>
-        <div class="badge"><span class="badge__icon">🚚</span> Spedizione 24/48h</div>
+      <div class="hero__trust">
+        <div class="trust-chip"><span>⭐</span> 4.9/5 · Oltre 50 Recensioni</div>
+        <div class="trust-chip"><span>👥</span> +35.000 Clienti</div>
+        <div class="trust-chip"><span>🇨🇭</span> Qualità Svizzera</div>
+        <div class="trust-chip"><span>🛡️</span> Garanzia 30 Giorni</div>
       </div>
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="intro">
-    <div class="intro__inner">
-      <p class="intro__label">Il Problema Reale</p>
-      <h2 class="intro__title">Dopo i 35 Anni il Tuo Testosterone Crolla. E Con Lui, Tutto il Resto.</h2>
-      <p class="intro__body">
-        Stanchezza cronica, calo della libido, difficoltà a costruire muscolo, irritabilità, scarsa concentrazione.
-        <br><br>
-        Non è colpa tua. <strong>Dal picco a 20 anni, il testosterone maschile scende mediamente dell'1–2% ogni anno.</strong>
-        Dopo i 40, molti uomini ne sentono le conseguenze ogni singolo giorno.
-        <br><br>
-        La buona notizia? Non devi rassegnarti. <strong>TESTOWIT è stato formulato esattamente per questo.</strong>
-      </p>
-    </div>
-  </section>
-
-  <!-- 10 REASONS -->
+  <!-- ══ 10 REASONS ══ -->
   <section class="reasons">
     <div class="container">
-      <div class="reasons__header">
-        <p class="reasons__label">La Guida Definitiva</p>
-        <h2 class="reasons__title">10 Motivi Per Scegliere TESTOWIT</h2>
+      <div class="s-head">
+        <h2>10 Motivi Per Scegliere <span class="red">TESTOWIT</span></h2>
+        <p>Non è un integratore qualunque. Ecco perché più di 35.000 uomini in Italia lo hanno già scelto.</p>
       </div>
 
-      <!-- Reason 1 -->
       <div class="reason">
-        <div class="reason__number">01</div>
-        <div class="reason__content">
-          <span class="reason__tag">Testosterone</span>
-          <h3 class="reason__title">Supporta il Testosterone in Modo Naturale — Senza Farmaci</h3>
-          <p class="reason__body">
-            La TRT (Terapia Sostitutiva del Testosterone) è una strada irreversibile che molti medici consigliano, ma che porta con sé dipendenza, effetti collaterali e costi altissimi.
-            <br><br>
-            TESTOWIT invece stimola il tuo organismo a <strong>produrre testosterone in modo naturale</strong>, grazie a Fieno Greco (estratto al 50% in protodioscine) e Zinco gluconato — ingredienti con solide evidenze scientifiche a supporto.
-          </p>
-          <div class="reason__highlight">
-            <strong>Lo studio dice:</strong> L'estratto di Fieno Greco standardizzato in protodioscine è associato a un aumento significativo del testosterone libero in uomini adulti con valori bassi.
-          </div>
+        <div class="reason__num">1</div>
+        <div class="reason__body">
+          <h3>Supporta il Testosterone in Modo 100% Naturale</h3>
+          <p>La TRT (Terapia Sostitutiva del Testosterone) comporta dipendenza, effetti collaterali e costi elevatissimi. TESTOWIT stimola invece il tuo organismo a <strong>produrre testosterone naturalmente</strong> grazie a Fieno Greco standardizzato al 50% in protodioscine e Zinco gluconato — entrambi con solide evidenze scientifiche.</p>
+          <div class="reason__callout">📊 L'estratto di Fieno Greco in protodioscine è associato a un aumento significativo del testosterone libero negli uomini adulti</div>
         </div>
       </div>
 
-      <!-- Reason 2 -->
       <div class="reason">
-        <div class="reason__number">02</div>
-        <div class="reason__content">
-          <span class="reason__tag">Libido & Vita Sessuale</span>
-          <h3 class="reason__title">Ridai Fuoco al Desiderio con Muira Puama e Maca</h3>
-          <p class="reason__body">
-            Il calo del desiderio sessuale è uno dei segnali più precoci del calo ormonale — e uno dei più difficili da ammettere.
-            <br><br>
-            TESTOWIT contiene <strong>Muira Puama</strong>, soprannominata "il Viagra della foresta amazzonica", e <strong>Maca</strong> peruviana, da secoli usata per migliorare libido, energia e fertilità. Due ingredienti, un effetto potenziato.
-          </p>
-          <div class="reason__highlight">
-            <strong>Risultato tipico:</strong> Uomini che assumono Muira Puama e Maca riportano miglioramenti nella vitalità sessuale già dalla seconda settimana di assunzione continuata.
-          </div>
+        <div class="reason__num">2</div>
+        <div class="reason__body">
+          <h3>Ridai Fuoco al Desiderio con Muira Puama e Maca</h3>
+          <p>Il calo del desiderio è spesso il primo segnale di squilibrio ormonale — e uno dei più difficili da ammettere. TESTOWIT contiene <strong>Muira Puama</strong> (estratto 4:1 dalla corteccia), soprannominata "il Viagra della foresta amazzonica", e <strong>Maca peruviana</strong>, usata da secoli per libido, energia e fertilità maschile.</p>
+          <div class="reason__callout">💡 Gli utenti riportano miglioramenti nella vitalità sessuale già dalla seconda settimana di assunzione continuata</div>
         </div>
       </div>
 
-      <!-- Reason 3 -->
       <div class="reason">
-        <div class="reason__number">03</div>
-        <div class="reason__content">
-          <span class="reason__tag">Energia & Forza</span>
-          <h3 class="reason__title">Torna ad Avere l'Energia dei Tuoi 30 Anni</h3>
-          <p class="reason__body">
-            La stanchezza cronica non è solo una questione di ore di sonno. È spesso un problema ormonale e metabolico.
-            <br><br>
-            <strong>RedNite™</strong> (succo di barbabietola rossa standardizzato al 1,5% in nitrati) migliora la circolazione e l'ossigenazione muscolare, mentre Maca e Ashwagandha KSM-66® combattono la stanchezza a livello adrenalinico. Senti la differenza già nelle prime settimane.
-          </p>
+        <div class="reason__num">3</div>
+        <div class="reason__body">
+          <h3>+87% Riferisce Più Energia già nelle Prime 4 Settimane</h3>
+          <p>La stanchezza cronica non è solo una questione di ore di sonno — è spesso un problema ormonale. <strong>RedNite™</strong> (succo di barbabietola rossa standardizzato al 1,5% in nitrati) migliora la circolazione e l'ossigenazione muscolare. Maca e <strong>KSM-66® Ashwagandha</strong> combattono la stanchezza a livello adrenalinico.</p>
         </div>
       </div>
 
-      <!-- Reason 4 -->
       <div class="reason">
-        <div class="reason__number">04</div>
-        <div class="reason__content">
-          <span class="reason__tag">Stress & Mente</span>
-          <h3 class="reason__title">Abbassa il Cortisolo. Il Testosterone Respira.</h3>
-          <p class="reason__body">
-            Cortisolo alto = testosterone basso. È una relazione diretta. Lo stress cronico è uno dei principali nemici dell'equilibrio ormonale maschile.
-            <br><br>
-            <strong>KSM-66® Ashwagandha</strong> — l'estratto di ashwagandha più studiato al mondo, con oltre 24 studi clinici alle spalle — riduce il cortisolo, migliora il focus mentale e favorisce un senso di calma e controllo. Non sedazione, ma equilibrio.
-          </p>
-          <div class="reason__highlight">
-            <strong>KSM-66®</strong> è un estratto brevettato di radice di Ashwagandha standardizzato al 5% in withanolidi. Non tutti gli ashwagandha sono uguali: è il più biodisponibile e studiato clinicamente.
-          </div>
+        <div class="reason__num">4</div>
+        <div class="reason__body">
+          <h3>Abbassa il Cortisolo — il Testosterone Respira</h3>
+          <p>Cortisolo alto = testosterone basso. È una relazione diretta. Lo stress cronico è uno dei principali nemici dell'equilibrio ormonale. <strong>KSM-66® Ashwagandha</strong> — con oltre 24 studi clinici pubblicati — riduce il cortisolo, migliora il focus mentale e favorisce un senso di calma e controllo. Non sedazione: equilibrio.</p>
+          <div class="reason__callout">🔬 KSM-66® è l'estratto di Ashwagandha più studiato al mondo, standardizzato al 5% in withanolidi</div>
         </div>
       </div>
 
-      <!-- Reason 5 -->
       <div class="reason">
-        <div class="reason__number">05</div>
-        <div class="reason__content">
-          <span class="reason__tag">Circolazione & Cuore</span>
-          <h3 class="reason__title">Sangue che Scorre Meglio. Ovunque.</h3>
-          <p class="reason__body">
-            Una buona circolazione non migliora solo le prestazioni fisiche — migliora anche quelle sessuali, la concentrazione e la salute cardiovascolare generale.
-            <br><br>
-            <strong>RedNite™</strong> fornisce nitrati naturali che il corpo converte in ossido nitrico (NO), il vasodilatatore naturale per eccellenza. Il risultato è una maggiore ossigenazione dei tessuti, meno affaticamento e un cuore più sano.
-          </p>
+        <div class="reason__num">5</div>
+        <div class="reason__body">
+          <h3>Circolazione Migliorata — Ovunque</h3>
+          <p>Una buona circolazione non migliora solo le prestazioni fisiche — ma anche quelle sessuali, la concentrazione e la salute cardiovascolare. <strong>RedNite™</strong> fornisce nitrati naturali che il corpo converte in ossido nitrico (NO), il vasodilatatore naturale per eccellenza, riducendo l'affaticamento e migliorando l'ossigenazione di tutti i tessuti.</p>
         </div>
       </div>
 
-      <!-- Reason 6 -->
       <div class="reason">
-        <div class="reason__number">06</div>
-        <div class="reason__content">
-          <span class="reason__tag">Prestazioni & Recupero</span>
-          <h3 class="reason__title">Recupera Più Veloce. Allenati di Più.</h3>
-          <p class="reason__body">
-            Il recupero muscolare lento è spesso un segnale diretto di testosterone basso. Più testosterone → più sintesi proteica → più muscolo → recupero più rapido.
-            <br><br>
-            Fieno Greco e Zinco agiscono in sinergia per supportare la sintesi di testosterone, che a sua volta accelera il recupero muscolare. Ideale per chi si allena regolarmente o vuole tornare ad essere attivo senza pagarlo il giorno dopo.
-          </p>
+        <div class="reason__num">6</div>
+        <div class="reason__body">
+          <h3>Recupero Muscolare Accelerato</h3>
+          <p>Recupero lento in palestra? È spesso un segnale diretto di testosterone basso. Più testosterone → più sintesi proteica → più muscolo → recupero più rapido. <strong>Fieno Greco e Zinco</strong> agiscono in sinergia per supportare la produzione di testosterone e accelerare la rigenerazione muscolare. Perfetto per chi si allena regolarmente.</p>
         </div>
       </div>
 
-      <!-- Reason 7 -->
       <div class="reason">
-        <div class="reason__number">07</div>
-        <div class="reason__content">
-          <span class="reason__tag">Antiossidanti</span>
-          <h3 class="reason__title">Combatte lo Stress Ossidativo Che ti Invecchia Dall'Interno</h3>
-          <p class="reason__body">
-            Lo stress ossidativo degrada le cellule, abbassa il testosterone e accelera l'invecchiamento. È invisibile, ma devastante.
-            <br><br>
-            TESTOWIT contiene <strong>Oligopin®</strong> (estratto di corteccia di Pino Marittimo Francese al 65% in OPC) e <strong>estratto di semi di Uva Rossa</strong> (95% in proantocianidine): due tra i più potenti antiossidanti naturali conosciuti, che proteggono le cellule dai danni ossidativi e supportano la salute vascolare.
-          </p>
-          <div class="reason__highlight">
-            <strong>Oligopin®</strong> è un estratto brevettato con studi clinici pubblicati su riviste peer-reviewed, superiore per biodisponibilità rispetto ai comuni estratti di corteccia di pino.
-          </div>
+        <div class="reason__num">7</div>
+        <div class="reason__body">
+          <h3>Potente Protezione Antiossidante</h3>
+          <p>Lo stress ossidativo degrada le cellule, abbassa il testosterone e accelera l'invecchiamento. TESTOWIT contiene <strong>Oligopin®</strong> (estratto brevettato di Pino Marittimo Francese al 65% in OPC) e <strong>semi di Uva Rossa</strong> (95% in proantocianidine): due dei più potenti antiossidanti naturali conosciuti.</p>
+          <div class="reason__callout">🏅 Oligopin® è un estratto brevettato, clinicamente superiore per biodisponibilità rispetto ai comuni estratti di corteccia di pino</div>
         </div>
       </div>
 
-      <!-- Reason 8 -->
       <div class="reason">
-        <div class="reason__number">08</div>
-        <div class="reason__content">
-          <span class="reason__tag">Qualità Svizzera</span>
-          <h3 class="reason__title">Formulato in Svizzera. Filiera HACCP. Zero Compromessi.</h3>
-          <p class="reason__body">
-            In un mercato pieno di integratori di bassa qualità, la provenienza conta. <strong>ORBIS Lifestyle è un'azienda svizzera</strong>, con ricerca e sviluppo condotti internamente e una filiera produttiva certificata HACCP dall'inizio alla fine.
-            <br><br>
-            Ogni capsula di TESTOWIT contiene esattamente ciò che dichiara sull'etichetta: dosaggi precisi, ingredienti standardizzati, nessun eccipiente inutile.
-          </p>
+        <div class="reason__num">8</div>
+        <div class="reason__body">
+          <h3>Formulato e Testato in Svizzera — Filiera HACCP</h3>
+          <p>In un mercato pieno di integratori di dubbia qualità, la provenienza conta. <strong>ORBIS Lifestyle è un'azienda svizzera</strong>, con R&amp;D interno e filiera produttiva certificata HACCP dall'inizio alla fine. Ogni lotto viene testato per purezza, efficacia e assenza di sostanze indesiderate. Zero eccipienti inutili.</p>
         </div>
       </div>
 
-      <!-- Reason 9 -->
       <div class="reason">
-        <div class="reason__number">09</div>
-        <div class="reason__content">
-          <span class="reason__tag">Garanzia</span>
-          <h3 class="reason__title">30 Giorni di Garanzia. Zero Rischi.</h3>
-          <p class="reason__body">
-            ORBIS crede nei propri prodotti abbastanza da offrirti una <strong>garanzia rimborso completo entro 30 giorni</strong>. Se TESTOWIT non ti soddisfa per qualsiasi motivo, vieni rimborsato al 100%. Nessuna domanda, nessuna burocrazia.
-            <br><br>
-            Il rischio è tutto nostro. Il guadagno è tutto tuo.
-          </p>
+        <div class="reason__num">9</div>
+        <div class="reason__body">
+          <h3>Risultati Visibili in 30–60 Giorni</h3>
+          <p>I migliori integratori naturali richiedono tempo per lavorare in profondità. La maggior parte degli utenti nota i primi miglioramenti — energia, umore, focus — <strong>già nelle prime 2–4 settimane</strong>. I risultati più significativi su testosterone, libido e composizione corporea si consolidano tra i 30 e i 60 giorni continuati.</p>
         </div>
       </div>
 
-      <!-- Reason 10 -->
       <div class="reason">
-        <div class="reason__number">10</div>
-        <div class="reason__content">
-          <span class="reason__tag">Offerta Esclusiva</span>
-          <h3 class="reason__title">Oggi Prendi 2 Confezioni e ne Paghi Solo 1</h3>
-          <p class="reason__body">
-            Gli ingredienti brevettati come KSM-66®, RedNite™ e Oligopin® hanno un costo di produzione elevato. Ma oggi, con la promo esclusiva 2×1, puoi avere <strong>60 giorni di trattamento al prezzo di 30</strong>.
-            <br><br>
-            I migliori risultati si vedono tra i 30 e i 60 giorni di assunzione continuata. Questa offerta ti permette di completare il ciclo completo senza interruzioni — e a metà prezzo.
-          </p>
-          <div class="reason__highlight">
-            <strong>Scorte limitate:</strong> La promo 2×1 è disponibile solo finché durano le scorte. Non aspettare.
-          </div>
+        <div class="reason__num">10</div>
+        <div class="reason__body">
+          <h3>30 Giorni di Garanzia — Zero Rischi</h3>
+          <p>ORBIS crede in TESTOWIT abbastanza da assumersi tutto il rischio. Prova per 30 giorni: se non sei soddisfatto per qualsiasi motivo, <strong>vieni rimborsato al 100%</strong> — nessuna domanda, nessuna burocrazia. E oggi, con la promo 2×1, hai 60 giorni di trattamento al prezzo di 30.</p>
+          <div class="reason__callout">🔥 OFFERTA ATTIVA: Prendi 2 confezioni, paghi solo 1 — Scorte limitate</div>
         </div>
       </div>
 
-      <!-- Mid-page CTA -->
-      <div style="text-align:center; padding: 60px 0 20px;">
-        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Pronto a Iniziare?</p>
-        <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--gold btn--lg">
-          Approfitta dell'Offerta 2×1 Adesso →
+      <div class="reasons__cta">
+        <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--lg">
+          SCOPRI TESTOWIT 2×1 →
         </a>
       </div>
-
     </div>
   </section>
 
-  <!-- INGREDIENTS -->
+  <!-- ══ STATS ══ -->
+  <section class="stats">
+    <div class="stats__inner">
+      <h2 class="stats__title">
+        Risultati misurabili,<br>
+        confermati da <span class="red">chi lo usa</span>
+      </h2>
+      <div class="stat-row">
+        <div class="stat-ring">+87%</div>
+        <div class="stat-text">riferisce <strong>più energia e motivazione</strong> già entro 4 settimane.*</div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-ring">+72%</div>
+        <div class="stat-text">nota <strong>migliore resistenza e recupero muscolare.</strong>*</div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-ring">+68%</div>
+        <div class="stat-text">segnala <strong>aumento della concentrazione e lucidità mentale.</strong>*</div>
+      </div>
+      <p class="stats__note">*(sondaggio interno dalla durata di 12 mesi, Gen 2026)</p>
+    </div>
+  </section>
+
+  <!-- ══ INGREDIENT CAROUSEL ══ -->
   <section class="ingredients">
     <div class="container--wide">
-      <div class="ingredients__header">
-        <p class="ingredients__label">Formula Completa</p>
-        <h2 class="ingredients__title">Ingredienti Brevettati, Dosaggi Precisi</h2>
+      <div class="s-head">
+        <h2>DENTRO OGNI CAPSULA: <span class="red">SOLO IL MEGLIO</span></h2>
       </div>
-      <div class="ingredients__grid">
-        <div class="ing-card">
-          <div class="ing-card__icon">🌿</div>
-          <div class="ing-card__name">KSM-66® Ashwagandha</div>
-          <div class="ing-card__badge">Estratto Brevettato</div>
-          <p class="ing-card__text">Il più studiato adattogeno al mondo. Riduce cortisolo, migliora focus e supporta livelli di testosterone. Standardizzato al 5% in withanolidi.</p>
+      <div class="carousel-outer" id="cOuter">
+        <div class="carousel-track" id="cTrack">
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#dcfce7;">🌿</div>
+              <h3>Muira Puama</h3>
+              <p>Migliora la vitalità fisica e mentale, combattendo la stanchezza e favorendo il benessere generale.</p>
+            </div>
+          </div>
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#fee2e2;">🔴</div>
+              <h3>RedNite®</h3>
+              <p>Fornisce nitrati naturali per migliorare la circolazione sanguigna e la salute cardiovascolare.</p>
+            </div>
+          </div>
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#fef9c3;">🌾</div>
+              <h3>Maca</h3>
+              <p>Aumenta i livelli di energia e forza, promuovendo vitalità e resistenza.</p>
+            </div>
+          </div>
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#fde68a;">🍂</div>
+              <h3>KSM-66® Ashwagandha</h3>
+              <p>Riduce il cortisolo e lo stress, migliorando il focus mentale e il benessere ormonale.</p>
+            </div>
+          </div>
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#d1fae5;">🌱</div>
+              <h3>Fieno Greco</h3>
+              <p>Supporta i livelli di testosterone libero e favorisce il recupero muscolare e la salute riproduttiva.</p>
+            </div>
+          </div>
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#ede9fe;">🌲</div>
+              <h3>Oligopin®</h3>
+              <p>Potente antiossidante brevettato che protegge le cellule dallo stress ossidativo.</p>
+            </div>
+          </div>
+
+          <div class="c-slide">
+            <div class="c-card">
+              <div class="c-card__img" style="background:#fce7f3;">🍇</div>
+              <h3>Semi di Uva Rossa</h3>
+              <p>95% in proantocianidine. Supporta la salute vascolare e protegge dall'invecchiamento cellulare.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">🌱</div>
-          <div class="ing-card__name">Muira Puama</div>
-          <div class="ing-card__badge">Estratto 4:1</div>
-          <p class="ing-card__text">Erba amazzonica tradizionalmente usata per supportare la libido e la vitalità maschile. Nota come "il Viagra della foresta".</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">❤️</div>
-          <div class="ing-card__name">RedNite™</div>
-          <div class="ing-card__badge">Estratto Brevettato</div>
-          <p class="ing-card__text">Succo di barbabietola rossa concentrato, standardizzato al 1,5% in nitrati. Migliora circolazione e ossigenazione muscolare.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">⚡</div>
-          <div class="ing-card__name">Maca Peruviana</div>
-          <div class="ing-card__badge">0.5% Beta-Ecdysterone</div>
-          <p class="ing-card__text">Radice andina per energia, endurance e libido. Usata da secoli per migliorare le prestazioni fisiche e la fertilità maschile.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">💪</div>
-          <div class="ing-card__name">Fieno Greco</div>
-          <div class="ing-card__badge">50% Protodioscine</div>
-          <p class="ing-card__text">Direttamente collegato all'aumento del testosterone libero. Favorisce anche la salute riproduttiva e il recupero muscolare.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">🌲</div>
-          <div class="ing-card__name">Oligopin®</div>
-          <div class="ing-card__badge">Estratto Brevettato</div>
-          <p class="ing-card__text">Estratto di corteccia di Pino Marittimo Francese al 65% in OPC. Potente antiossidante, protegge le cellule dallo stress ossidativo.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">🍇</div>
-          <div class="ing-card__name">Semi di Uva Rossa</div>
-          <div class="ing-card__badge">95% Proantocianidine</div>
-          <p class="ing-card__text">Antiossidante di altissima concentrazione. Supporta salute vascolare e protegge le cellule dai danni ossidativi.</p>
-        </div>
-        <div class="ing-card">
-          <div class="ing-card__icon">🔩</div>
-          <div class="ing-card__name">Zinco + Vitamine D3, E, B6</div>
-          <div class="ing-card__badge">Micronutrienti Essenziali</div>
-          <p class="ing-card__text">Zinco e Vitamina D3 sono cofattori essenziali per la sintesi di testosterone. B6 e E completano il supporto ormonale e antiossidante.</p>
-        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="c-btn" id="cPrev">&#8592;</button>
+        <div class="c-dots" id="cDots"></div>
+        <button class="c-btn" id="cNext">&#8594;</button>
       </div>
     </div>
   </section>
 
-  <!-- COMPARISON TABLE -->
+  <!-- ══ COMPARISON TABLE ══ -->
   <section class="comparison">
-    <div class="container">
-      <div class="comparison__header">
-        <p class="comparison__label">Confronto Onesto</p>
-        <h2 class="comparison__title">TESTOWIT vs Altre Soluzioni</h2>
+    <div class="container--wide">
+      <div class="s-head">
+        <h2>PERCHÉ TESTOWIT È LA SCELTA <span class="red">NUMERO UNO</span></h2>
       </div>
-      <div style="overflow-x:auto;">
-        <table class="comp-table">
+      <div class="table-scroll">
+        <table class="comp">
           <thead>
             <tr>
-              <th>Caratteristica</th>
-              <th>TRT / Farmaci</th>
-              <th>TESTOWIT</th>
+              <th></th>
+              <th class="col-orbis">
+                <div class="orbis-badge">orbis <span>+</span></div>
+              </th>
+              <th>Altri integratori per stimolare le capacità ormonali</th>
+              <th>Rimedi Tradizionali A Base Di Erbe</th>
+              <th>Formule Per Migliorare Le Prestazioni</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Formula 100% Naturale</td>
-              <td><span class="icon-no">✗</span></td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Ingredienti 100% naturali</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
             </tr>
             <tr>
-              <td>Senza Prescrizione Medica</td>
-              <td><span class="icon-no">✗</span></td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Formula clinicamente testata</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
+              <td><span class="ico-p">✓</span></td>
             </tr>
             <tr>
-              <td>Ingredienti Brevettati (KSM-66®, RedNite™)</td>
-              <td><span class="icon-no">✗</span></td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Azione multi-meccanismo</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
             </tr>
             <tr>
-              <td>Supporta Libido & Performance</td>
-              <td><span class="icon-yes">✓</span></td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Formula sicura</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
             </tr>
             <tr>
-              <td>Qualità Certificata (HACCP Svizzera)</td>
-              <td>Variabile</td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Nessun rischio di effetti collaterali</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
+              <td><span class="ico-n">✕</span></td>
+              <td><span class="ico-p">✓</span></td>
             </tr>
             <tr>
-              <td>Riduce Stress & Cortisolo</td>
-              <td><span class="icon-no">✗</span></td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Fondata su ricerche scientifiche e studi clinici</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
+              <td><span class="ico-p">✓</span></td>
             </tr>
             <tr>
-              <td>Nessun Effetto Collaterale Noto</td>
-              <td><span class="icon-no">✗</span></td>
-              <td><span class="icon-yes">✓</span></td>
-            </tr>
-            <tr>
-              <td>Garanzia Rimborso 30 Giorni</td>
-              <td><span class="icon-no">✗</span></td>
-              <td><span class="icon-yes">✓</span></td>
+              <td>Supporto specifico per il testosterone</td>
+              <td class="col-orbis"><span class="ico-y">✓</span></td>
+              <td><span class="ico-p">✓</span></td>
+              <td><span class="ico-n">✕</span></td>
+              <td><span class="ico-p">✓</span></td>
             </tr>
           </tbody>
         </table>
@@ -1113,155 +1022,188 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="container--wide">
-      <div class="testimonials__header">
-        <p class="testimonials__label">Testimonianze Reali</p>
-        <h2 class="testimonials__title">Cosa Dicono gli Uomini Che lo Hanno Provato</h2>
-      </div>
-      <div class="testimonials__grid">
-        <div class="testi-card">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"Prendo 3 capsule di Testowit al giorno. Già dopo una settimana ho notato un aumento palpabile della forza. Il livello di energia è tornato quello di anni fa. Prodotto eccellente."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__avatar">M</div>
-            <div>
-              <div class="testi-card__name">Marco T.</div>
-              <div class="testi-card__meta">44 anni · Milano</div>
-              <div class="testi-card__verified">✓ Acquisto Verificato</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"Ho acquistato Testowit per mio marito. Lo stava già usando in passato con ottimi risultati, motivo per cui ho deciso di riacquistarlo senza esitazioni. È un prodotto che trasmette fiducia."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__avatar">L</div>
-            <div>
-              <div class="testi-card__name">Laura M.</div>
-              <div class="testi-card__meta">Acquisto per il partner · Roma</div>
-              <div class="testi-card__verified">✓ Acquisto Verificato</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"Aumento di energia, focus e pump durante l'allenamento. Dopo 45 giorni di assunzione continua i risultati sono concreti. In palestra riesco ad allenarmi più a lungo e recupero meglio."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__avatar">A</div>
-            <div>
-              <div class="testi-card__name">Andrea F.</div>
-              <div class="testi-card__meta">38 anni · Torino</div>
-              <div class="testi-card__verified">✓ Acquisto Verificato</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"Stavo cercando un'alternativa naturale alla TRT. Il mio medico mi aveva suggerito di aspettare e provare prima con integratori mirati. Con Testowit ho trovato quello che cercavo."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__avatar">G</div>
-            <div>
-              <div class="testi-card__name">Giuseppe R.</div>
-              <div class="testi-card__meta">51 anni · Napoli</div>
-              <div class="testi-card__verified">✓ Acquisto Verificato</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-card__stars">★★★★☆</div>
-          <p class="testi-card__quote">"Devo ammettere che ero scettico. Ma dopo 30 giorni ho notato miglioramenti nella qualità del sonno, nel livello di energia e nell'umore generale. La qualità svizzera si percepisce."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__avatar">S</div>
-            <div>
-              <div class="testi-card__name">Stefano B.</div>
-              <div class="testi-card__meta">47 anni · Bologna</div>
-              <div class="testi-card__verified">✓ Acquisto Verificato</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"Uso Testowit da 3 mesi. La combinazione Muira Puama + Maca ha fatto la differenza sulla libido. L'energia è costante durante tutta la giornata. Nessun effetto collaterale. Lo consiglio."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__avatar">R</div>
-            <div>
-              <div class="testi-card__name">Roberto P.</div>
-              <div class="testi-card__meta">42 anni · Firenze</div>
-              <div class="testi-card__verified">✓ Acquisto Verificato</div>
-            </div>
-          </div>
-        </div>
+  <!-- ══ SWISS QUALITY ══ -->
+  <section class="swiss">
+    <div class="swiss__grid">
+      <div class="swiss__img-box">🧑‍🔬</div>
+      <div class="swiss__copy">
+        <h2>Formulato e testato <span class="red">in Svizzera 🇨🇭</span></h2>
+        <p>TESTOWIT è <strong>formulato in Svizzera</strong>, dal nostro team medico-scientifico, con ingredienti selezionati e processi sicuri.</p>
+        <p>Ogni lotto viene testato per <strong>purezza, efficacia e assenza di sostanze indesiderate</strong>.</p>
+        <ul class="swiss__list">
+          <li><span class="li-x">✗</span> Senza riempitivi inutili o sostanze vietate</li>
+          <li><span class="li-chk">✅</span> Controllo qualità su ogni lotto</li>
+          <li><span class="li-chk">✅</span> Certificazione GMP e HACCP</li>
+          <li><span class="li-chk">✅</span> Adatto a regimi alimentari vegetariani e vegani</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- GUARANTEE -->
+  <!-- ══ SOCIAL PROOF ══ -->
+  <section class="social">
+    <div class="container--wide">
+      <div class="s-head">
+        <h2>OLTRE 35.000 UOMINI HANNO GIÀ <span class="red">SCELTO ORBIS</span></h2>
+      </div>
+      <div class="video-grid">
+
+        <div class="v-card">
+          <div class="v-card__meta">
+            <div class="v-avatar">💪</div>
+            <div>
+              <div class="v-name">Raimondo C. – Personal Trainer</div>
+              <div class="v-quote">"Recupero più in fretta e mi alleno più duramente. Lo consiglio ai miei atleti."</div>
+            </div>
+          </div>
+          <div class="v-thumb">
+            <div class="v-thumb__overlay"></div>
+            <div class="v-thumb__play">▶</div>
+          </div>
+        </div>
+
+        <div class="v-card">
+          <div class="v-card__meta">
+            <div class="v-avatar">🏃</div>
+            <div>
+              <div class="v-name">Ivan Martellato</div>
+              <div class="v-quote">"Più concentrazione al lavoro e vitalità nella vita privata."</div>
+            </div>
+          </div>
+          <div class="v-thumb">
+            <div class="v-thumb__overlay"></div>
+            <div class="v-thumb__play">▶</div>
+          </div>
+        </div>
+
+        <div class="v-card">
+          <div class="v-card__meta">
+            <div class="v-avatar">👨‍⚕️</div>
+            <div>
+              <div class="v-name">Dott. Roberto B.</div>
+              <div class="v-quote">"Gli ingredienti di TESTOWIT sono supportati da evidenze scientifiche per il benessere ormonale maschile."</div>
+            </div>
+          </div>
+          <div class="v-thumb">
+            <div class="v-thumb__overlay"></div>
+            <div class="v-thumb__play">▶</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="badges">
+        <div class="badge-pill">Oltre +35.000 Clienti In Italia</div>
+        <div class="badge-pill">Valutazione Media 4,8/5 ⭐</div>
+        <div class="badge-pill">Community In Crescita Dal 2022</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GUARANTEE ══ -->
   <section class="guarantee">
     <div class="guarantee__inner">
       <div class="guarantee__icon">🛡️</div>
-      <h2 class="guarantee__title">Garanzia Rimborso Completo — 30 Giorni</h2>
-      <p class="guarantee__body">
-        Crediamo così tanto in TESTOWIT che ci assumiamo noi tutto il rischio.
-        <br><br>
+      <h2>Garanzia Rimborso<br>Completo — 30 Giorni</h2>
+      <p>
+        Crediamo così tanto in TESTOWIT che ci assumiamo tutto il rischio.<br><br>
         Prova il prodotto per 30 giorni. Se per qualsiasi motivo non sei soddisfatto,
-        <strong>ti rimborsiamo al 100%</strong> — senza domande, senza burocrazia.
-        <br><br>
+        <strong>ti rimborsiamo al 100%</strong> — senza domande, senza burocrazia.<br><br>
         È così che lavora un'azienda svizzera seria.
       </p>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
+  <!-- ══ FINAL CTA ══ -->
   <section class="final-cta">
     <div class="container">
-      <p class="final-cta__label">Offerta Esclusiva · Scorte Limitate</p>
-      <h2 class="final-cta__title">
-        Prendi 2,<br>
-        <em>Paghi 1.</em>
-      </h2>
-      <p class="final-cta__sub">
+      <div class="final-cta__pill">Offerta Esclusiva · Scorte Limitate</div>
+      <h2>Prendi 2,<br><span class="red">Paghi Solo 1.</span></h2>
+      <p>
         Completa il ciclo di 60 giorni al prezzo di 30 giorni.
         <strong>È il momento giusto per iniziare.</strong>
       </p>
-      <div class="final-cta__promo">🔥 OFFERTA 2×1 ATTIVA ORA</div>
-      <br>
-      <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--gold btn--lg">
-        Voglio TESTOWIT 2×1 Adesso →
+      <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--lg">
+        VOGLIO TESTOWIT 2×1 ADESSO →
       </a>
-      <div class="final-cta__perks">
-        <div class="perk"><span class="perk__icon">✓</span> Garanzia 30 Giorni</div>
-        <div class="perk"><span class="perk__icon">✓</span> Spedizione 24/48h</div>
-        <div class="perk"><span class="perk__icon">✓</span> Pagamento Sicuro</div>
-        <div class="perk"><span class="perk__icon">✓</span> Qualità Svizzera</div>
-        <div class="perk"><span class="perk__icon">✓</span> Formula Naturale</div>
+      <div class="cta-perks">
+        <div class="cta-perk"><span class="chk">✓</span> Garanzia 30 Giorni</div>
+        <div class="cta-perk"><span class="chk">✓</span> Spedizione 24/48h</div>
+        <div class="cta-perk"><span class="chk">✓</span> Pagamento Sicuro</div>
+        <div class="cta-perk"><span class="chk">✓</span> Qualità Svizzera</div>
+        <div class="cta-perk"><span class="chk">✓</span> Formula Naturale</div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══ FOOTER ══ -->
   <footer class="footer">
-    <div class="footer__logo">ORBIS Lifestyle</div>
-    <p class="footer__disclaimer">
+    <div class="footer__logo">ORBIS LIFESTYLE</div>
+    <p class="footer__disc">
       Gli integratori alimentari non sono sostituti di un'alimentazione varia ed equilibrata e di uno stile di vita sano.
       Non superare le dosi giornaliere raccomandate. Tenere fuori dalla portata dei bambini.
-      Conservare in luogo fresco e asciutto, lontano da fonti di calore dirette.
-      Le valutazioni e le testimonianze riportate sono opinioni personali dei singoli consumatori e non costituiscono
-      garanzia di risultati. I risultati possono variare da persona a persona. Consultare un medico prima di
-      iniziare qualsiasi nuovo regime di integrazione.
+      Le testimonianze riportate sono opinioni personali dei singoli consumatori e non costituiscono garanzia di risultati.
+      I risultati possono variare da persona a persona. Consultare un medico prima di iniziare qualsiasi regime di integrazione.
       <br><br>
       © ORBIS Lifestyle SA · Svizzera · Tutti i diritti riservati.
     </p>
   </footer>
 
-  <!-- STICKY CTA BAR -->
-  <div class="sticky-bar">
+  <!-- ══ STICKY BAR ══ -->
+  <div class="sticky">
     <p>🔥 Offerta 2×1: <span>Prendi 2 Confezioni, Paghi Solo 1</span></p>
-    <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--gold" style="padding:11px 28px; font-size:13px;">
-      Approfitta Ora →
+    <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn">
+      APPROFITTA ORA →
     </a>
   </div>
+
+  <!-- ══ CAROUSEL JS ══ -->
+  <script>
+    (function () {
+      var track  = document.getElementById('cTrack');
+      var slides = track.querySelectorAll('.c-slide');
+      var dotsEl = document.getElementById('cDots');
+      var total  = slides.length;
+      var idx    = 0;
+
+      function visCount() { return window.innerWidth <= 760 ? 1 : 3; }
+
+      // build dots
+      for (var i = 0; i < total; i++) {
+        var d = document.createElement('button');
+        d.className = 'c-dot' + (i === 0 ? ' on' : '');
+        d.setAttribute('data-i', i);
+        d.addEventListener('click', function () { go(+this.getAttribute('data-i')); });
+        dotsEl.appendChild(d);
+      }
+
+      function update() {
+        var gap = 20;
+        var w   = slides[0].offsetWidth + gap;
+        track.style.transform = 'translateX(-' + (idx * w) + 'px)';
+        dotsEl.querySelectorAll('.c-dot').forEach(function (d, i) {
+          d.classList.toggle('on', i === idx);
+        });
+      }
+
+      function go(i) {
+        var max = total - visCount();
+        idx = Math.max(0, Math.min(i, max));
+        update();
+      }
+
+      document.getElementById('cPrev').addEventListener('click', function () { go(idx - 1); });
+      document.getElementById('cNext').addEventListener('click', function () { go(idx + 1); });
+      window.addEventListener('resize', function () { idx = 0; update(); });
+
+      // touch swipe
+      var startX = 0;
+      track.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', function (e) {
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) go(diff > 0 ? idx + 1 : idx - 1);
+      }, { passive: true });
+    })();
+  </script>
 
 </body>
 </html>
