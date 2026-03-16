@@ -123,60 +123,80 @@
     .btn--block  { display: block; width: 100%; }
 
     /* ══════════════════════════════════
-       HERO
+       EDITORIAL HERO
     ══════════════════════════════════ */
-    .hero {
-      background: var(--bg);
-      padding: 60px 20px 64px;
-      text-align: center;
+    .ed-hero {
+      background: #fff;
+      padding: 36px 20px 28px;
     }
-    .hero__pill {
-      display: inline-block;
-      background: var(--blue-light);
-      color: #1D4ED8;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 6px 18px;
-      border-radius: 40px;
-      margin-bottom: 22px;
-    }
-    .hero h1 {
-      font-size: clamp(26px, 5.5vw, 54px);
+    .ed-hero .container { max-width: 820px; }
+    .ed-hero__title {
+      font-size: clamp(26px, 5vw, 46px);
       font-weight: 900;
       line-height: 1.1;
-      text-transform: uppercase;
       color: var(--navy);
-      margin-bottom: 18px;
-      max-width: 780px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 24px;
     }
-    .hero__sub {
-      font-size: clamp(15px, 2.2vw, 18px);
-      color: var(--gray);
-      max-width: 620px;
-      margin: 0 auto 36px;
-      line-height: 1.7;
-    }
-    .hero__sub strong { color: var(--navy); }
-    .hero__trust {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-      margin-top: 28px;
-    }
-    .trust-chip {
+    .ed-hero__author {
       display: flex;
       align-items: center;
-      gap: 7px;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--gray-dark);
+      gap: 14px;
+      margin-bottom: 24px;
     }
-    .trust-chip span { font-size: 17px; }
+    .ed-hero__avatar {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      letter-spacing: -1px;
+    }
+    .ed-hero__name {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: .4px;
+      text-transform: uppercase;
+    }
+    .ed-hero__date {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 3px;
+    }
+    .ed-hero__quote {
+      background: #FEE2E2;
+      border-left: 4px solid var(--red);
+      padding: 16px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      font-style: italic;
+      border-radius: 0 8px 8px 0;
+      line-height: 1.55;
+    }
+
+    /* ══════════════════════════════════
+       TOP COMPARISON (above fold)
+    ══════════════════════════════════ */
+    .cmp-top { background: #fff; padding: 12px 20px 40px; }
+    .cmp-top .container--wide { max-width: 820px; }
+    .comp--top thead th.col-orbis {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 14px 14px 0 0;
+    }
+    .comp--top thead th.col-orbis .orbis-badge { background: var(--red); }
+    .comp--top .col-orbis--dark {
+      background: var(--navy);
+      color: #fff;
+    }
+    .comp--top tbody td { color: var(--gray-dark); font-size: 13px; }
+    .comp--top tbody td:first-child { font-weight: 700; color: var(--navy); }
 
     /* ══════════════════════════════════
        SECTION HEADINGS
@@ -752,29 +772,61 @@
     <a href="https://orbislifestyle.com/pages/testowit-promo-2x1">Ordina Ora →</a>
   </div>
 
-  <!-- ══ HERO ══ -->
-  <section class="hero">
+  <!-- ══ EDITORIAL HERO ══ -->
+  <section class="ed-hero">
     <div class="container">
-      <div class="hero__pill">L'Integratore Testosterone #1 In Italia</div>
-      <h1>
-        10 Motivi Per Cui<br>
-        <span class="red">TESTOWIT</span> È Diverso<br>
-        Da Qualsiasi Altra Cosa<br>
-        Tu Abbia Mai Provato
+      <h1 class="ed-hero__title">
+        10 Motivi Per Cui Gli Uomini Italiani Stanno Abbandonando la TRT Per <span class="red">TESTOWIT</span> (Naturale &gt; Aghi. Ogni Volta.)
       </h1>
-      <p class="hero__sub">
-        Migliaia di uomini italiani hanno già scoperto come TESTOWIT
-        supporta naturalmente il testosterone, l'energia e la vitalità
-        — <strong>senza farmaci, senza effetti collaterali.</strong>
-      </p>
-      <a href="https://orbislifestyle.com/pages/testowit-promo-2x1" class="btn btn--lg">
-        SCOPRI L'OFFERTA -50% →
-      </a>
-      <div class="hero__trust">
-        <div class="trust-chip"><span>⭐</span> 4.9/5 · Oltre 50 Recensioni</div>
-        <div class="trust-chip"><span>👥</span> +35.000 Clienti</div>
-        <div class="trust-chip"><span>🇨🇭</span> Qualità Svizzera</div>
-        <div class="trust-chip"><span>🛡️</span> Garanzia 30 Giorni</div>
+      <div class="ed-hero__author">
+        <div class="ed-hero__avatar">MT</div>
+        <div>
+          <div class="ed-hero__name">Marco T. | Esperto della Salute Maschile</div>
+          <div class="ed-hero__date">Ultimo aggiornamento: 16 Mar 2026</div>
+        </div>
+      </div>
+      <blockquote class="ed-hero__quote">
+        "Non hai bisogno di un nuovo anno. Hai bisogno di 90 giorni. Inizia ora."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ══ COMPARISON TABLE (ABOVE FOLD) ══ -->
+  <section class="cmp-top">
+    <div class="container--wide">
+      <div class="table-scroll">
+        <table class="comp comp--top">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="col-orbis">
+                <div class="orbis-badge">TESTOWIT <span>+</span></div>
+              </th>
+              <th>TRT</th>
+              <th>Integratori Generici</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🌿 Supporto Naturale</td>
+              <td class="col-orbis col-orbis--dark"><strong>Lavora Con il Tuo Corpo</strong></td>
+              <td>Spegne la produzione naturale</td>
+              <td>Ingredienti dubbi</td>
+            </tr>
+            <tr>
+              <td>⚡ Risultati</td>
+              <td class="col-orbis col-orbis--dark"><strong>Dalla prima settimana, riattiva il sistema in 90 giorni</strong></td>
+              <td>Agisce subito ma sostituisce il tuo sistema</td>
+              <td>Forse mai</td>
+            </tr>
+            <tr>
+              <td>🛡️ Sicurezza</td>
+              <td class="col-orbis col-orbis--dark"><strong>Testosterone Naturale</strong></td>
+              <td>Testosterone Sintetico</td>
+              <td>Chi lo sa?</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
