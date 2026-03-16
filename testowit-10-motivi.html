@@ -14,6 +14,22 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
+    /* ── HIDE SHOPIFY THEME CHROME ── */
+    #shopify-section-announcement-bar,
+    .announcement-bar,
+    .shopify-section-group-header-group,
+    #shopify-section-header,
+    header.site-header,
+    header.header,
+    .header-wrapper,
+    .site-header,
+    .page-header,
+    .page-hero,
+    h1.page-title,
+    .section-page-header,
+    .template-page .page-title,
+    .template-page h1 { display: none !important; }
+
     /* ── SHOPIFY FULL-WIDTH BREAKOUT ──
        Shopify wraps page content in a narrow container.
        This breaks out of it to use 100% of the viewport. */
