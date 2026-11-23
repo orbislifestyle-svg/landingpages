@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Guida alla Creatina Basica – ORBIS</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root{
+    --ink:#121417; --muted:#5b6168; --line:#e4e1da; --paper:#faf8f4;
+    --accent:#d9822b; --accent-soft:#f6e6d3; --dark:#15181c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:Inter, sans-serif;color:var(--ink);font-size:10.5pt;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:210mm;height:297mm;padding:20mm 20mm 18mm;position:relative;overflow:hidden;page-break-after:always;background:var(--paper)}
+  .page:last-child{page-break-after:auto}
+  .brand{font-family:"Inter Display",Inter,sans-serif;font-weight:800;letter-spacing:.32em;font-size:10pt}
+  .top{display:flex;justify-content:space-between;align-items:center;font-size:8pt;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:4mm;margin-bottom:12mm}
+  .foot{position:absolute;left:20mm;right:20mm;bottom:10mm;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--muted);letter-spacing:.06em}
+  .kicker{font-size:8.5pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:3mm}
+  h1,h2,h3{font-family:"Inter Display",Inter,sans-serif;line-height:1.08;letter-spacing:-.01em}
+  h2{font-size:28pt;font-weight:800;margin-bottom:6mm}
+  h3{font-size:13pt;font-weight:700;margin-bottom:2mm}
+  p{margin-bottom:3.2mm}
+  .lead{font-size:12.5pt;color:#2a2e33;line-height:1.5;margin-bottom:8mm;max-width:150mm}
+  .muted{color:var(--muted)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:6mm}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5mm}
+  .card{background:#fff;border:1px solid var(--line);border-radius:4mm;padding:6mm}
+  .card.dark{background:var(--dark);color:#f2efe9;border-color:var(--dark)}
+  .card.soft{background:var(--accent-soft);border-color:var(--accent-soft)}
+  .num{font-family:"Inter Display";font-weight:800;font-size:30pt;color:var(--accent);line-height:1}
+  .small{font-size:9pt}
+  ul.clean{list-style:none}
+  ul.clean li{padding-left:6mm;position:relative;margin-bottom:2.4mm}
+  ul.clean li:before{content:"";position:absolute;left:0;top:2.2mm;width:2.4mm;height:2.4mm;border-radius:50%;background:var(--accent)}
+  .step{display:grid;grid-template-columns:14mm 1fr;gap:4mm;align-items:start;padding:3.2mm 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:0}
+  .step .n{width:11mm;height:11mm;border-radius:50%;background:var(--dark);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:11pt}
+  .note{border-left:3px solid var(--accent);padding:3mm 5mm;background:#fff;font-size:9.5pt;color:#2a2e33;margin-top:6mm}
+  table{width:100%;border-collapse:collapse;font-size:9.5pt}
+  th,td{text-align:left;padding:2.2mm 3mm;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .myth{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:4mm;overflow:hidden;margin-bottom:3mm;background:#fff}
+  .myth>div{padding:3.6mm 5mm}
+  .myth .m{background:#f1eee8}
+  .tag{display:inline-block;font-size:7.5pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.5mm}
+  .tag.no{color:#a2482f}.tag.yes{color:#2f7a4a}
+  .check{display:grid;grid-template-columns:repeat(10,1fr);gap:2mm;margin-top:3mm}
+  .check span{aspect-ratio:1;border:1.2px solid #c9c4ba;border-radius:1.6mm;font-size:7pt;color:var(--muted);display:flex;align-items:flex-start;justify-content:flex-start;padding:1mm 1.3mm;background:#fff}
+  .faq h3{font-size:11pt;margin-bottom:1.2mm}
+  .faq>div{padding:3.6mm 0;border-bottom:1px solid var(--line)}
+  .faq p{margin-bottom:0;font-size:9.8pt}
+
+  /* cover */
+  .cover{background:var(--dark);color:#f2efe9;padding:22mm}
+  .cover .brand{color:#fff}
+  .cover h1{font-size:54pt;font-weight:800;letter-spacing:-.025em;margin:58mm 0 6mm}
+  .cover h1 em{font-style:normal;color:var(--accent)}
+  .cover .sub{font-size:14pt;color:#c8c3ba;max-width:140mm;line-height:1.45}
+  .cover .ring{position:absolute;right:-60mm;top:-40mm;width:200mm;height:200mm;border-radius:50%;border:1px solid rgba(255,255,255,.08)}
+  .cover .ring.r2{right:-30mm;top:-10mm;width:140mm;height:140mm;border-color:rgba(217,130,43,.35)}
+  .cover .ring.r3{right:5mm;top:25mm;width:70mm;height:70mm;background:radial-gradient(circle at 35% 35%,#e79a4c,#b8641c);border:0}
+  .cover .meta{position:absolute;left:22mm;right:22mm;bottom:22mm;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(255,255,255,.14);padding-top:6mm;font-size:9pt;color:#a9a39a}
+  .cover .meta b{color:#fff;font-weight:600}
+  .toc{margin-top:4mm}
+  .toc div{display:flex;justify-content:space-between;padding:3.4mm 0;border-bottom:1px solid var(--line);font-size:11pt}
+  .toc div span:last-child{color:var(--muted);font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+  <div class="brand">ORBIS</div>
+  <h1>La guida alla<br><em>Creatina Basica</em></h1>
+  <p class="sub">Cos'è, come funziona e come usarla ogni giorno per ottenere il massimo dai tuoi allenamenti.</p>
+  <div class="meta">
+    <div><b>Creatina monoidrato tamponata</b><br>con bicarbonato, enzimi digestivi e zenzero</div>
+    <div style="text-align:right">Guida omaggio riservata<br>ai clienti ORBIS</div>
+  </div>
+</section>
+
+<!-- 2 BENVENUTO + INDICE -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>Benvenuto</span></div>
+  <div class="kicker">Benvenuto in ORBIS</div>
+  <h2>Grazie per averci scelto.</h2>
+  <p class="lead">Hai appena fatto un passo concreto verso allenamenti più efficaci. La creatina è uno degli integratori più studiati al mondo: semplice, ma va usata nel modo giusto. Questa guida ti spiega tutto quello che serve sapere, senza giri di parole.</p>
+  <div class="grid3" style="margin-bottom:12mm">
+    <div class="card"><div class="num">96</div><p class="small muted" style="margin:2mm 0 0">dosi totali nelle tue 3 confezioni da 250 g</p></div>
+    <div class="card"><div class="num">3</div><p class="small muted" style="margin:2mm 0 0">misurini rasi al giorno (7,65 g)</p></div>
+    <div class="card"><div class="num">0</div><p class="small muted" style="margin:2mm 0 0">fasi di carico: si parte subito con la dose giornaliera</p></div>
+  </div>
+  <div class="kicker">In questa guida</div>
+  <div class="toc">
+    <div><span>Cos'è la creatina e come funziona</span><span>03</span></div>
+    <div><span>Perché Creatina Basica è diversa</span><span>04</span></div>
+    <div><span>Come assumerla: dose, momento, abbinamenti</span><span>05</span></div>
+    <div><span>Falsi miti da sfatare</span><span>06</span></div>
+    <div><span>Il tuo piano di 30 giorni</span><span>07</span></div>
+    <div><span>Domande frequenti</span><span>08</span></div>
+    <div><span>Avvertenze e informazioni importanti</span><span>09</span></div>
+  </div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>02</span></div>
+</section>
+
+<!-- 3 COS'È -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>Le basi</span></div>
+  <div class="kicker">Capitolo 1</div>
+  <h2>Cos'è la creatina<br>e come funziona</h2>
+  <p class="lead">La creatina è una sostanza che il nostro corpo produce già da solo e che assumiamo in piccola parte con l'alimentazione, soprattutto con carne e pesce. Si trova principalmente nei muscoli.</p>
+  <div class="grid2" style="margin-bottom:8mm">
+    <div>
+      <h3>L'energia degli sforzi brevi</h3>
+      <p>Quando fai uno sforzo intenso e breve, come una serie in palestra, uno sprint o un salto, i muscoli usano un'energia "pronta all'uso" che si esaurisce in pochi secondi. La creatina, sotto forma di fosfocreatina, aiuta a ricaricare velocemente questa riserva.</p>
+    </div>
+    <div>
+      <h3>Perché integrarla</h3>
+      <p>Con la sola alimentazione è difficile mantenere le riserve muscolari di creatina al massimo. Un'integrazione quotidiana costante aiuta a saturarle, così hai più "carburante" a disposizione nelle ripetizioni ad alta intensità.</p>
+    </div>
+  </div>
+  <div class="card dark">
+    <div class="kicker" style="color:var(--accent)">Cosa dice la scienza</div>
+    <p style="font-size:13pt;line-height:1.45;margin-bottom:3mm">La creatina aumenta la prestazione fisica in caso di esercizio ad alta intensità, di breve durata e ripetuto.</p>
+    <p class="small" style="color:#a9a39a;margin:0">Indicazione autorizzata a livello europeo. L'effetto benefico si ottiene con l'assunzione giornaliera di 3 g di creatina.</p>
+  </div>
+  <div class="grid3" style="margin-top:8mm">
+    <div><h3>Pesi e calisthenics</h3><p class="small muted">Serie e ripetizioni ad alta intensità.</p></div>
+    <div><h3>Sport di squadra</h3><p class="small muted">Calcio, basket, padel: scatti e cambi di ritmo ripetuti.</p></div>
+    <div><h3>HIIT e cross training</h3><p class="small muted">Lavori a intervalli brevi e intensi.</p></div>
+  </div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>03</span></div>
+</section>
+
+<!-- 4 PERCHÉ BASICA -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>La formula</span></div>
+  <div class="kicker">Capitolo 2</div>
+  <h2>Perché Creatina Basica<br>è diversa</h2>
+  <p class="lead">Molte persone abbandonano la creatina perché la sentono "pesante" sullo stomaco. Abbiamo costruito Creatina Basica proprio per risolvere questo problema.</p>
+  <div class="grid2" style="margin-bottom:6mm">
+    <div class="card">
+      <div class="kicker">01 · Base</div>
+      <h3>Creatina monoidrato</h3>
+      <p class="small muted" style="margin:0">La forma di creatina più studiata in assoluto: quella su cui si basa la ricerca scientifica.</p>
+    </div>
+    <div class="card">
+      <div class="kicker">02 · Tampone</div>
+      <h3>Bicarbonato di sodio</h3>
+      <p class="small muted" style="margin:0">La creatina è "tamponata": il bicarbonato rende la formula più delicata, da qui il nome <b>Basica</b>.</p>
+    </div>
+    <div class="card">
+      <div class="kicker">03 · Digestione</div>
+      <h3>Enzimi digestivi</h3>
+      <p class="small muted" style="margin:0">Aggiunti per una formula pensata per una digestione più leggera.</p>
+    </div>
+    <div class="card">
+      <div class="kicker">04 · Comfort</div>
+      <h3>Zenzero</h3>
+      <p class="small muted" style="margin:0">Un ingrediente della tradizione, scelto per completare una formula delicata sullo stomaco.</p>
+    </div>
+  </div>
+  <div class="card soft">
+    <h3>Qualità che puoi verificare</h3>
+    <ul class="clean" style="margin-top:3mm">
+      <li><b>Formula svizzera, prodotta in Europa</b> in stabilimenti GMP-compliant</li>
+      <li><b>Testata da laboratori terzi</b></li>
+      <li><b>Senza lattosio e senza glutine</b>, adatta anche agli stomaci più sensibili</li>
+    </ul>
+  </div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>04</span></div>
+</section>
+
+<!-- 5 COME ASSUMERLA -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>Istruzioni d'uso</span></div>
+  <div class="kicker">Capitolo 3</div>
+  <h2>Come assumerla</h2>
+  <p class="lead">La regola d'oro è una sola: <b>costanza</b>. La creatina funziona se la prendi ogni giorno, non solo quando ti alleni.</p>
+  <div class="card" style="padding:1mm 6mm;margin-bottom:5mm">
+    <div class="step"><div class="n">1</div><div><h3>Dosa</h3><p class="muted" style="margin:0">Prendi <b>3 misurini rasi</b> (7,65 g) di Creatina Basica.</p></div></div>
+    <div class="step"><div class="n">2</div><div><h3>Sciogli</h3><p class="muted" style="margin:0">Versali in un bicchiere d'acqua o di un'altra bevanda (circa <b>250 ml</b>).</p></div></div>
+    <div class="step"><div class="n">3</div><div><h3>Mescola e bevi</h3><p class="muted" style="margin:0">Mescola fino a completa solubilizzazione. <b>Una volta al giorno</b>, senza fase di carico.</p></div></div>
+  </div>
+  <table>
+    <tr><th style="width:32%">Domanda</th><th>Il nostro consiglio</th></tr>
+    <tr><td><b>Quando?</b></td><td>Il momento conta meno della regolarità. Scegli un orario facile da ricordare: dopo l'allenamento nei giorni in cui ti alleni, a colazione o a pranzo negli altri.</td></tr>
+    <tr><td><b>Nei giorni di riposo?</b></td><td>Sì, prendila anche nei giorni di riposo: serve a mantenere piene le riserve muscolari.</td></tr>
+    <tr><td><b>Con cosa?</b></td><td>Acqua, succo, latte o nel tuo shake proteico. Puoi assumerla anche durante un pasto.</td></tr>
+    <tr><td><b>Idratazione</b></td><td>Bevi acqua a sufficienza durante la giornata, soprattutto se ti alleni intensamente.</td></tr>
+    <tr><td><b>Ho saltato un giorno</b></td><td>Nessun problema: riprendi il giorno dopo con la dose normale. Non raddoppiare.</td></tr>
+  </table>
+  <div class="note"><b>Consiglio pratico:</b> lascia il barattolo e il misurino vicino al bicchiere dove fai colazione o nello zaino della palestra. Vederlo ogni giorno è il modo più semplice per non dimenticarlo.</div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>05</span></div>
+</section>
+
+<!-- 6 MITI -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>Falsi miti</span></div>
+  <div class="kicker">Capitolo 4</div>
+  <h2>Falsi miti<br>da sfatare</h2>
+  <p class="lead">Sulla creatina circolano tante leggende. Ecco cosa c'è di vero.</p>
+
+  <div class="myth"><div class="m"><span class="tag no">Mito</span><p style="margin:0"><b>"La creatina è un ormone o uno steroide."</b></p></div><div><span class="tag yes">Realtà</span><p class="small" style="margin:0">No. È una sostanza che il corpo produce naturalmente ed è presente negli alimenti come carne e pesce.</p></div></div>
+
+  <div class="myth"><div class="m"><span class="tag no">Mito</span><p style="margin:0"><b>"Serve per forza una fase di carico."</b></p></div><div><span class="tag yes">Realtà</span><p class="small" style="margin:0">Con Creatina Basica non serve: la dose giornaliera costante è sufficiente.</p></div></div>
+
+  <div class="myth"><div class="m"><span class="tag no">Mito</span><p style="margin:0"><b>"Va presa solo nei giorni di allenamento."</b></p></div><div><span class="tag yes">Realtà</span><p class="small" style="margin:0">Funziona per accumulo: prenderla ogni giorno mantiene le riserve muscolari piene.</p></div></div>
+
+  <div class="myth"><div class="m"><span class="tag no">Mito</span><p style="margin:0"><b>"È solo per i bodybuilder."</b></p></div><div><span class="tag yes">Realtà</span><p class="small" style="margin:0">È utile a chiunque pratichi attività intense, brevi e ripetute: palestra, sport di squadra, HIIT.</p></div></div>
+
+  <div class="myth"><div class="m"><span class="tag no">Mito</span><p style="margin:0"><b>"Più ne prendo, più funziona."</b></p></div><div><span class="tag yes">Realtà</span><p class="small" style="margin:0">Falso. Superata la saturazione il corpo non ne immagazzina di più. Non superare mai la dose consigliata.</p></div></div>
+
+  <div class="myth"><div class="m"><span class="tag no">Mito</span><p style="margin:0"><b>"La creatina dà sempre fastidio allo stomaco."</b></p></div><div><span class="tag yes">Realtà</span><p class="small" style="margin:0">È proprio il motivo per cui esiste Creatina Basica: formula tamponata con enzimi digestivi e zenzero.</p></div></div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>06</span></div>
+</section>
+
+<!-- 7 PIANO 30 GIORNI -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>Piano d'azione</span></div>
+  <div class="kicker">Capitolo 5</div>
+  <h2>Il tuo piano<br>di 30 giorni</h2>
+  <p class="lead">Una confezione da 250 g contiene 32 dosi: circa un mese di utilizzo. Spunta una casella ogni giorno in cui prendi la tua dose.</p>
+  <div class="card" style="margin-bottom:7mm">
+    <div class="check">
+      <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+      <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+      <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="kicker">Settimane 1–2</div>
+      <h3>Crea l'abitudine</h3>
+      <p class="small muted" style="margin:0">Scegli un orario fisso e collegalo a qualcosa che fai già ogni giorno, come la colazione. L'obiettivo è non saltare nemmeno un giorno.</p>
+    </div>
+    <div class="card">
+      <div class="kicker">Settimane 3–4</div>
+      <h3>Allenati con intensità</h3>
+      <p class="small muted" style="margin:0">Con le riserve muscolari ben rifornite, concentrati sulla qualità di serie e ripetizioni intense. Annota carichi e ripetizioni per vedere i tuoi progressi.</p>
+    </div>
+  </div>
+  <div class="card soft" style="margin-top:6mm">
+    <h3>I 3 pilastri che amplificano i risultati</h3>
+    <ul class="clean" style="margin-top:3mm;margin-bottom:0">
+      <li><b>Allenamento costante:</b> la creatina supporta lo sforzo, ma lo sforzo devi metterlo tu.</li>
+      <li><b>Alimentazione varia ed equilibrata</b>, con un apporto adeguato di proteine.</li>
+      <li><b>Sonno e recupero:</b> i miglioramenti si costruiscono anche quando riposi.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>07</span></div>
+</section>
+
+<!-- 8 FAQ -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>FAQ</span></div>
+  <div class="kicker">Capitolo 6</div>
+  <h2>Domande frequenti</h2>
+  <div class="faq">
+    <div><h3>Posso mescolarla con le proteine in polvere?</h3><p class="muted">Sì. Puoi aggiungere i 3 misurini direttamente al tuo shake proteico.</p></div>
+    <div><h3>Posso prenderla con il caffè?</h3><p class="muted">Puoi scioglierla in un'altra bevanda, come indicato in etichetta. Per semplicità e per un'idratazione migliore, ti consigliamo acqua o succo.</p></div>
+    <div><h3>Fa ingrassare?</h3><p class="muted">La creatina non contiene grassi e non apporta calorie significative.</p></div>
+    <div><h3>È adatta a chi ha lo stomaco sensibile?</h3><p class="muted">Creatina Basica nasce proprio per questo: è tamponata con bicarbonato, arricchita con enzimi digestivi e zenzero, ed è senza lattosio e senza glutine.</p></div>
+    <div><h3>Va bene per le donne?</h3><p class="muted">Sì, per le donne adulte che praticano esercizio fisico intenso. Non va usata in gravidanza.</p></div>
+    <div><h3>Posso prenderla se non vado in palestra?</h3><p class="muted">Il prodotto è pensato per sportivi adulti che praticano esercizio fisico intenso: è in quel contesto che dà il suo contributo.</p></div>
+    <div><h3>Come la conservo?</h3><p class="muted">Chiudi bene il barattolo dopo l'uso e conservalo in un luogo fresco e asciutto, lontano dall'umidità.</p></div>
+    <div><h3>A cosa serve il portapillole in omaggio?</h3><p class="muted">È il tuo compagno per gli altri integratori quotidiani: tienilo in borsa o nello zaino della palestra per avere tutto sotto mano.</p></div>
+  </div>
+  <div class="foot"><span>Guida alla Creatina Basica</span><span>08</span></div>
+</section>
+
+<!-- 9 AVVERTENZE + CHIUSURA -->
+<section class="page">
+  <div class="top"><span class="brand">ORBIS</span><span>Informazioni importanti</span></div>
+  <div class="kicker">Capitolo 7</div>
+  <h2>Avvertenze</h2>
+  <div class="card" style="margin-bottom:8mm">
+    <ul class="clean" style="margin:0">
+      <li>Prodotto destinato ai soli sportivi adulti che praticano esercizio fisico intenso.</li>
+      <li>Non utilizzare per più di un mese.</li>
+      <li>Non utilizzare in gravidanza.</li>
+      <li>Non superare la dose giornaliera consigliata.</li>
+      <li>Gli integratori non sostituiscono una dieta varia ed equilibrata e uno stile di vita sano.</li>
+      <li>Tenere fuori dalla portata dei bambini di età inferiore a 3 anni.</li>
+    </ul>
+  </div>
+  <p class="small muted">In caso di patologie, terapie farmacologiche in corso o dubbi, consulta il tuo medico prima dell'uso. Le informazioni contenute in questa guida hanno scopo informativo e non sostituiscono il parere di un medico o di un professionista sanitario. Fai sempre riferimento all'etichetta del prodotto.</p>
+  <p class="small muted">*La creatina aumenta la prestazione fisica in caso di esercizio ad alta intensità, di breve durata e ripetuto. L'effetto benefico si ottiene con l'assunzione giornaliera di 3 g di creatina.</p>
+
+  <div class="card dark" style="margin-top:14mm;padding:12mm">
+    <div class="brand" style="color:#fff;margin-bottom:6mm">ORBIS</div>
+    <p style="font-family:'Inter Display';font-size:22pt;font-weight:800;line-height:1.15;margin-bottom:4mm">Costanza oggi,<br><span style="color:var(--accent)">risultati domani.</span></p>
+    <p style="color:#c8c3ba;margin:0">Hai domande sul tuo ordine o sul prodotto? Il nostro team è a disposizione: scrivici dal sito <b style="color:#fff">orbislifestyle.com</b></p>
+  </div>
+  <div class="foot"><span>© ORBIS Lifestyle · Guida alla Creatina Basica</span><span>09</span></div>
+</section>
+
+</body>
+</html>
